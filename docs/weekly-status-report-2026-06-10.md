@@ -230,14 +230,18 @@ setup side. The next stage needs to produce measured results.
 ## 6. Plan for Next Week
 
 Next week I plan to focus on turning the harness into actual measured
-experiments:
+experiments. The practical goal is to prove one end-to-end baseline run first,
+then expand only after that path is working.
 
-1. Connect the local `llama.cpp` experimental checkout.
-2. Confirm the model files and update the model config paths.
-3. Run a small smoke-test benchmark using the uncompressed `f16_f16` baseline.
-4. Run at least one compressed KV-cache method if the local fork supports it.
-5. Save raw benchmark logs, parsed CSV rows, and a markdown report.
-6. Start adding memory telemetry so VRAM usage can be compared across methods.
+1. Check the repo state and review the new handoff prompt at
+   `_meta/Codex_chat_copies/RotorQuant_next_steps_handoff_2026-06-24.md`.
+2. Connect or clearly report the local `llama.cpp` experimental checkout.
+3. Confirm one local GGUF model path and update `configs/models.yaml` if needed.
+4. Run a small dry-run benchmark using the uncompressed `f16_f16` baseline.
+5. Run one actual `f16_f16` baseline smoke test if the binary and model exist.
+6. Save raw benchmark logs, parsed CSV rows, and a markdown report.
+7. Try one compressed KV-cache method only after the baseline path works.
+8. Start adding memory telemetry so VRAM usage can be compared across methods.
 
 The goal for the next report is to move from "the harness is ready" to "the
 first benchmark comparison has been run and recorded."

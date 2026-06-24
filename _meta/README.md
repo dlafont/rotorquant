@@ -51,5 +51,9 @@ So, in practice:
 - root `_meta/` files = project support notes when needed
 - project root = live instructions and active work items
 
+Current continuation handoff:
+
+- `Codex_chat_copies/RotorQuant_next_steps_handoff_2026-06-24.md`
+
 If I add more handoff material later, I should put it here instead of scattering
 it around the root folder.

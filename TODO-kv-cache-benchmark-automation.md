@@ -1055,3 +1055,30 @@ The task is done when:
   - q4_0
   - supported experimental methods
 - [ ] No model files, build artifacts, or huge result files are committed accidentally.
+
+---
+
+## 25. Current continuation handoff (2026-06-24)
+
+Use this handoff file when starting the next Codex chat:
+
+```text
+_meta/Codex_chat_copies/RotorQuant_next_steps_handoff_2026-06-24.md
+```
+
+The next practical milestone is deliberately small:
+
+1. Confirm the repo state with `git status --short --branch`.
+2. Re-run the focused benchmark automation tests.
+3. Generate `results/reports/environment-report.md`.
+4. Generate `results/reports/llamacpp-build-report.md`.
+5. Locate or connect the experimental `llama.cpp` checkout.
+6. Confirm one local GGUF model path.
+7. Dry-run one `f16_f16` baseline benchmark.
+8. If the binary and model exist, run one actual `f16_f16` smoke test.
+9. Save raw logs, parsed CSV rows, and a markdown report under `results/`.
+10. Try one compressed cache method only after the baseline path works.
+
+Do not let compressed-method failures block the first baseline result. If a
+compressed method is unsupported or fails with a flag/runtime issue, record that
+as a blocker and keep the successful baseline evidence.
