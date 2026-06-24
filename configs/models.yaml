@@ -1,0 +1,12 @@
+models:
+  qwen_3b:
+    name: "Qwen 2.5/3B Instruct GGUF"
+    path: "D:/models/qwen-3b-instruct.gguf"
+    expected_ctx: 32768
+    notes: "Small validation model"
+
+  llama_8b:
+    name: "Llama 3.1/3.2 8B Instruct GGUF"
+    path: "D:/models/llama-8b-instruct.gguf"
+    expected_ctx: 32768
+    notes: "Practical local benchmark model"

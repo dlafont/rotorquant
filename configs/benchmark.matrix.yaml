@@ -1,0 +1,33 @@
+build_profiles:
+  - build_backend: cpu
+    flash_attention: false
+
+  - build_backend: cuda
+    flash_attention: true
+
+context_sizes:
+  - 2048
+  - 4096
+  - 8192
+  - 16384
+
+generation_tokens:
+  - 256
+
+prompt_tokens:
+  - 512
+  - 2048
+  - 4096
+
+gpu_layers:
+  - 999
+
+threads:
+  - auto
+
+seed: 42
+temperature: 0
+
+repetitions:
+  performance: 3
+  accuracy: 1

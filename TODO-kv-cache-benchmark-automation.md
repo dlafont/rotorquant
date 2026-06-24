@@ -919,6 +919,11 @@ Implement this first before the full matrix.
 
 ### TODO
 
+- [ ] Detect the repository shape and write `results/reports/environment-report.md`.
+- [ ] If the root is RotorQuant research-only, report that `tools/llama.cpp/` is still missing and stop the smoke test cleanly until the experimental fork is available.
+- [ ] Locate the experimental `llama.cpp` checkout at the repo root or under `tools/llama.cpp/`.
+- [ ] Write a build report that clearly says when the experimental fork is missing instead of failing cryptically.
+- [ ] Detect missing build tools (`cmake`, `ninja`, `cl`) before trying to compile.
 - [ ] Build experimental llama.cpp fork successfully.
 - [ ] Confirm `llama-bench` runs.
 - [ ] Run one model with:

@@ -7,3 +7,7 @@ build/
 .eggs/
 *.so
 .mcp.json
+.pytest_cache/
+results/
+tools/llama.cpp/
+tools/llama.cpp/build-*/

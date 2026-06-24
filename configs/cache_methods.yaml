@@ -1,0 +1,36 @@
+cache_methods:
+  - id: f16_f16
+    cache_k: f16
+    cache_v: f16
+    category: baseline
+    description: "Standard FP16 KV cache baseline"
+
+  - id: q8_q8
+    cache_k: q8_0
+    cache_v: q8_0
+    category: baseline
+    description: "Existing llama.cpp Q8 KV cache"
+
+  - id: q4_q4
+    cache_k: q4_0
+    cache_v: q4_0
+    category: baseline
+    description: "Existing llama.cpp Q4 KV cache"
+
+  - id: turbo3_turbo3
+    cache_k: turbo3
+    cache_v: turbo3
+    category: experimental
+    description: "TurboQuant 3-bit K/V, if supported by fork"
+
+  - id: planar3_planar3
+    cache_k: planar3
+    cache_v: planar3
+    category: experimental
+    description: "PlanarQuant 3-bit K/V, if supported by fork"
+
+  - id: iso3_iso3
+    cache_k: iso3
+    cache_v: iso3
+    category: experimental
+    description: "IsoQuant 3-bit K/V, if supported by fork"
